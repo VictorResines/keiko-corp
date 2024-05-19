@@ -192,8 +192,15 @@ header .social li:first-child {
   position: relative;
   width: 100%;
   height: 560px;
-  background: url('../img/hero-opt.webp') no-repeat fixed center center;
+  background: url('../img/hero') no-repeat fixed center center;
   background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background: url('../img/hero-opt.avif') no-repeat fixed center center;
+    height: 460px;
+  }
 }
 
 .hero .caption {
